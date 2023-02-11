@@ -1,0 +1,113 @@
+@charset "utf-8";
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1220px;
+}
+#header {
+    border-bottom: 1px solid #c8c8c8;
+}
+.h_in {
+    position: relative;
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+.logo {
+    padding-top: 18px;
+    /* 첫번쨰 자식태그의 위쪽 마진과 막내 자식태그의 아래쪽 마진은 부모태그 결계라인 바깥으로 생성된다.
+    .logo 는 .h_in의 첫번쨰 자식 태그이기 떄문에 margin-top를 사용하게 되면 .h_in영영의 위쪽 바깥으로 여백이 만들어져서 헤더내용 전체의 시작라인이 내려오게 된다. 
+    그래서 .logo의 위쪽 여백은 padding을 사용하는게 좋다. */
+}
+.logo a {
+    display: block;
+    width: 145px;
+    height: 54px;
+    background-image: url(../img/logo.png);
+    text-indent: -99999px;
+}
+.gnb {
+    position: absolute;
+    right: 56px;
+    top: 53px;
+}
+.gnb li {
+    float: left;
+    padding: 0 42px;
+}
+.gnb li a{
+    font-size: 17px;
+    color: #333;
+}
+.gnb li:hover a {
+    color: #029c82;
+}
+.open_search {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.open_search a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/icon_sc.png);
+    text-indent: -99999px;
+}
+.utill{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.utill li {
+    float: left;
+    margin-left: 12px;
+}
+.utill li a {
+    color: #777;
+}
+.utill li:hover a {
+    color: #333;
+}
+/* 본문1 - 메인 슬라이드 */
+.main_slide {
+    position: relative;
+    margin-bottom: 80px;   
+}
+.ms_list{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.ms_list a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+.ms_prev {
+    position: relative;
+    top: 268px;
+    left: 50%;
+    margin-left: -600px;
+}
+.ms_prev a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/a_left.img);
+    text-indent: -99999px;
+}
+.ms_next {
+    position: relative;
+    top: 268px;
+    right: 50%;
+    margin-right: -600px;
+}
+.ms_next a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/a_right.img);
+    text-indent: -99999px;
+}
